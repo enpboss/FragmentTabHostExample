@@ -11,12 +11,14 @@ The MainActivity overrides the onBackPressed() method and pops the current tab f
 
 Basic Structure:
 
-FragmentTabHost
-        |
-        Tab1ContainerFragment
-        |         |
-        |         Tab1Fragment  - Tab1AddOnFragment - ......
-        |
-        Tab2ContainerFragment
-                  |
-                  Tab2Fragment  - Tab2AddOnFragment - ......
+          MainActivity
+                |
+        FragmentTabHost
+                |
+                Tab1ContainerFragment
+                |         |
+                |         Tab1Fragment  - Tab1AddOnFragment - ......
+                |
+                Tab2ContainerFragment
+                          |
+                          Tab2Fragment  - Tab2AddOnFragment - ......
