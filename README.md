@@ -22,3 +22,6 @@ Basic Structure:
                 Tab2ContainerFragment
                           |
                           Tab2Fragment  - Tab2AddOnFragment - ......
+
+The default position of the tabs are on the top.
+If you prefer tabs at bottom, modify activity_main.xml and you find the commented xml which defines the layout for bottom tabs.
