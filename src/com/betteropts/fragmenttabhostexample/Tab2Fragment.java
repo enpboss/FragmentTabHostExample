@@ -7,12 +7,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class Tab2Fragment extends Fragment {
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		return inflater.inflate(R.layout.tab2_fragment, null);
+		return inflater.inflate(R.layout.tab_fragment, null);
 	}
 	
 	@Override
@@ -22,7 +23,8 @@ public class Tab2Fragment extends Fragment {
 	}
 	
 	private void initView() {
-		Button button = (Button) getView().findViewById(R.id.tab2_btn);
+		((TextView)getView().findViewById(R.id.tab_text)).setText("Tab 2");
+		Button button = (Button) getView().findViewById(R.id.tab_btn);
 		button.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {

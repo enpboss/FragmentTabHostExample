@@ -26,7 +26,7 @@ public class Tab1AddOnFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		Log.e("test", "tab 1 add on oncreateview");
-		return inflater.inflate(R.layout.tab1_fragment, null);
+		return inflater.inflate(R.layout.tab_fragment, null);
 	}
 	
 	@Override
@@ -43,9 +43,9 @@ public class Tab1AddOnFragment extends Fragment {
 	}
 	
 	private void initView() {
-		TextView textView = (TextView) getView().findViewById(R.id.tab1_text);
+		TextView textView = (TextView) getView().findViewById(R.id.tab_text);
 		textView.setText("Tab 1 AddOn: " + mCurrentAddOnCount);
-		Button button = (Button) getView().findViewById(R.id.tab1_btn);
+		Button button = (Button) getView().findViewById(R.id.tab_btn);
 		button.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
